@@ -1,0 +1,284 @@
+{
+  "java_version": "25.0.1+8-LTS-27",
+  "vm": "Java HotSpot(TM) 64-Bit Server VM",
+  "os": "Windows 11 10.0",
+  "architecture": "amd64",
+  "warmup_calls_per_method_case": 20,
+  "calls_per_measured_run": 10,
+  "measured_runs": 3,
+  "alphabet": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 !?",
+  "generator": "java.util.Random(seed=20261108+n); random uniform alphabet, pattern=text[n/3:n/3+m]; repetitive all a",
+  "timing_scope": "In-process Algorithms method including output construction, dispatch and volatile result-size consumption; excludes compilation, JVM startup, JSON transport, generator and correctness check. Each run is 10 calls, reported as ms/call.",
+  "rows": [
+    {
+      "m": 25,
+      "n": 500,
+      "seed": 20261608,
+      "runs_ms": [
+        0.03346,
+        0.0333,
+        0.03323
+      ],
+      "median_ms": 0.0333,
+      "occurrences": 1,
+      "case": "random",
+      "algorithm": "naive",
+      "correct": true
+    },
+    {
+      "m": 25,
+      "n": 500,
+      "seed": 20261608,
+      "runs_ms": [
+        0.02589,
+        0.02557,
+        0.02519
+      ],
+      "median_ms": 0.02557,
+      "occurrences": 1,
+      "case": "random",
+      "algorithm": "kmp",
+      "correct": true
+    },
+    {
+      "m": 25,
+      "n": 500,
+      "seed": 20261608,
+      "runs_ms": [
+        0.04479,
+        0.05126,
+        0.04212
+      ],
+      "median_ms": 0.04479,
+      "occurrences": 1,
+      "case": "random",
+      "algorithm": "rk",
+      "correct": true
+    },
+    {
+      "m": 75,
+      "n": 1500,
+      "seed": 20262608,
+      "runs_ms": [
+        0.07936,
+        0.07687,
+        0.04787
+      ],
+      "median_ms": 0.07687,
+      "occurrences": 1,
+      "case": "random",
+      "algorithm": "naive",
+      "correct": true
+    },
+    {
+      "m": 75,
+      "n": 1500,
+      "seed": 20262608,
+      "runs_ms": [
+        0.07267,
+        0.07177,
+        0.07215
+      ],
+      "median_ms": 0.07215,
+      "occurrences": 1,
+      "case": "random",
+      "algorithm": "kmp",
+      "correct": true
+    },
+    {
+      "m": 75,
+      "n": 1500,
+      "seed": 20262608,
+      "runs_ms": [
+        0.1288,
+        0.11499,
+        0.06025
+      ],
+      "median_ms": 0.11499,
+      "occurrences": 1,
+      "case": "random",
+      "algorithm": "rk",
+      "correct": true
+    },
+    {
+      "m": 150,
+      "n": 3000,
+      "seed": 20264108,
+      "runs_ms": [
+        0.05475,
+        0.05374,
+        0.05358
+      ],
+      "median_ms": 0.05374,
+      "occurrences": 1,
+      "case": "random",
+      "algorithm": "naive",
+      "correct": true
+    },
+    {
+      "m": 150,
+      "n": 3000,
+      "seed": 20264108,
+      "runs_ms": [
+        0.06233,
+        0.04978,
+        0.03959
+      ],
+      "median_ms": 0.04978,
+      "occurrences": 1,
+      "case": "random",
+      "algorithm": "kmp",
+      "correct": true
+    },
+    {
+      "m": 150,
+      "n": 3000,
+      "seed": 20264108,
+      "runs_ms": [
+        0.04518,
+        0.04514,
+        0.04484
+      ],
+      "median_ms": 0.04514,
+      "occurrences": 1,
+      "case": "random",
+      "algorithm": "rk",
+      "correct": true
+    },
+    {
+      "m": 25,
+      "n": 500,
+      "seed": 20261608,
+      "runs_ms": [
+        0.15504,
+        0.14775,
+        0.13209
+      ],
+      "median_ms": 0.14775,
+      "occurrences": 476,
+      "case": "repetitive",
+      "algorithm": "naive",
+      "correct": true
+    },
+    {
+      "m": 25,
+      "n": 500,
+      "seed": 20261608,
+      "runs_ms": [
+        0.01709,
+        0.0218,
+        0.0172
+      ],
+      "median_ms": 0.0172,
+      "occurrences": 476,
+      "case": "repetitive",
+      "algorithm": "kmp",
+      "correct": true
+    },
+    {
+      "m": 25,
+      "n": 500,
+      "seed": 20261608,
+      "runs_ms": [
+        0.09995,
+        0.09844,
+        0.09159
+      ],
+      "median_ms": 0.09844,
+      "occurrences": 476,
+      "case": "repetitive",
+      "algorithm": "rk",
+      "correct": true
+    },
+    {
+      "m": 75,
+      "n": 1500,
+      "seed": 20262608,
+      "runs_ms": [
+        0.18282,
+        0.18299,
+        0.18825
+      ],
+      "median_ms": 0.18299,
+      "occurrences": 1426,
+      "case": "repetitive",
+      "algorithm": "naive",
+      "correct": true
+    },
+    {
+      "m": 75,
+      "n": 1500,
+      "seed": 20262608,
+      "runs_ms": [
+        0.01371,
+        0.014,
+        0.01456
+      ],
+      "median_ms": 0.014,
+      "occurrences": 1426,
+      "case": "repetitive",
+      "algorithm": "kmp",
+      "correct": true
+    },
+    {
+      "m": 75,
+      "n": 1500,
+      "seed": 20262608,
+      "runs_ms": [
+        0.36771,
+        0.37941,
+        0.36435
+      ],
+      "median_ms": 0.36771,
+      "occurrences": 1426,
+      "case": "repetitive",
+      "algorithm": "rk",
+      "correct": true
+    },
+    {
+      "m": 150,
+      "n": 3000,
+      "seed": 20264108,
+      "runs_ms": [
+        0.6877,
+        0.68433,
+        0.68032
+      ],
+      "median_ms": 0.68433,
+      "occurrences": 2851,
+      "case": "repetitive",
+      "algorithm": "naive",
+      "correct": true
+    },
+    {
+      "m": 150,
+      "n": 3000,
+      "seed": 20264108,
+      "runs_ms": [
+        0.03389,
+        0.03595,
+        0.03524
+      ],
+      "median_ms": 0.03524,
+      "occurrences": 2851,
+      "case": "repetitive",
+      "algorithm": "kmp",
+      "correct": true
+    },
+    {
+      "m": 150,
+      "n": 3000,
+      "seed": 20264108,
+      "runs_ms": [
+        1.21614,
+        1.22284,
+        1.22167
+      ],
+      "median_ms": 1.22167,
+      "occurrences": 2851,
+      "case": "repetitive",
+      "algorithm": "rk",
+      "correct": true
+    }
+  ]
+}
